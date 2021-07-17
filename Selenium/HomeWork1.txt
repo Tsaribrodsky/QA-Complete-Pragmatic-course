@@ -1,0 +1,49 @@
+﻿Napishete, vsichki vyzmojni lokatori, za koito se setite che sa adekvatni za izpolzvane... za vseki edin ot elementite v tozi arhiv.
+
+
+element1: link=Месечен
+
+          xpath=//div[@id='astroContent']//a[@class='right']
+
+          xpath=//div[@id='astroContent']//div[@class='left']/following-sibling::a[@class='right']
+
+          css=div#astroContent>div.info>a.right
+
+          css=div#astroContent>div.info>div.left+a[target='_blank']
+
+          css=a[href$="mesechen"]
+
+
+
+element2: css=div.secondary-nav>ul>li>a[href$='krasota']  /*Сайтът е променен.*/
+
+          xpath=//div[@class='secondary-nav']//li[5]
+
+
+
+element3: link=Login
+
+          xpath=//a[contains(@href,'/login.php')]
+
+          xpath=//td[4]//a
+
+          xpath=//a[text()='Login']
+
+          css=a[href^='/login']
+
+
+
+element5: xpath=//input[@class='search-button']
+
+          css=input.search-button
+          /*В сайтът vesti.bg в Хром намира и селектира елемента, но в Мозила само го намира без да го селектира в жълто.*/
+
+
+
+element7: xpath=//div[@class='fit clearfix']//section[3]//a
+
+          xpath=//section/child::a[contains(@href,'/enterprise-hosting')]
+
+          xpath=//div/following-sibling::a[contains(@href,'/enterprise-hosting')]
+
+          css=svg+div+a[href^='/enterprise']

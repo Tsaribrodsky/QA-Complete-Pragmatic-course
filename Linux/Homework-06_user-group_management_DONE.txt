@@ -1,0 +1,10 @@
+﻿vim /etc/bashrc
+umask 007
+:wq
+source ~/.bashrc
+. ~/.bashrc
+﻿vim /etc/profile
+umask 007
+:wq
+source ~/.bashrc
+. ~/.bashrc

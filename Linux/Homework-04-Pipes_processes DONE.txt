@@ -1,0 +1,17 @@
+﻿ls -lh /var/log/ > ~/file-list
+ls -lh /etc/ >> ~/file-list
+cat file-list
+ls -lh ~ ~/nosuchdir 2> /dev/null
+ls -lh ~ ~/nosuchdir > /dev/null
+ls -lh ~ ~/nosuchdir > /dev/null 2>&1
+locate -b '\shadow'
+cp /etc/shadow ~/log-list 2>/dev/null
+sleep 10000 &
+sleep 20000 &
+sleep 30000 &
+ps u
+fg %2
+CTR+Z
+jobs
+killall sleep
+kill %2

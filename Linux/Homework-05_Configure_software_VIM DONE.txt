@@ -1,0 +1,6 @@
+﻿apt-get update
+apt-cache search apache2
+apt-get install apache2
+dpkg -L apache2
+apt-get purge apache2
+apt-get install libncurses5-dev libncursesw5-dev

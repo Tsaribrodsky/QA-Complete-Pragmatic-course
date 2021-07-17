@@ -1,0 +1,24 @@
+﻿student
+l@n2017
+pwd
+ls     
+mkdir temp
+ls
+mkdir temp/projects
+ls temp/projects/
+touch temp/temp-file
+mv temp homework
+cd homework/projects/
+pwd
+ls -l
+cp /home/student/homework/temp-file .    
+cd
+pwd
+ls homework/projects/
+rm homework/temp-file
+ls homework/
+ls homework/projects/
+cp -r homework/projects/ homework/projects_backup
+rm -r homework/projects
+export PS1="\e[0;36m\d \A\e[m \e[0;32m\u@\h:\e[38;5;237m\w\$ \e[m"
+

@@ -1,0 +1,21 @@
+﻿student
+l@n2017
+locate LGPL-3
+find /usr/share/common-licenses/ -name LGPL-3 -exec cp {} /home/student/LGPL-3-COPY \;
+cat LGPL-3-COPY
+cut -d ":" -f1,7 /etc/passwd
+head -15 LGPL-3-COPY
+tail -15 LGPL-3-COPY
+grep -c "library" LGPL-3-COPY
+grep -v "public" LGPL-3-COPY
+grep -A 2 "library" LGPL-3-COPY
+grep -B 3 "library" LGPL-3-COPY
+grep -C 5 "public" LGPL-3-COPY
+grep -v '^#' /etc/ssh/sshd_config | sort -u
+cd /var/log/
+ls -lh *.gz
+ls -lh syslog*[0-9]*
+ls -lh sys???
+touch {100,200,300}
+ls -lh [0-9]*
+
