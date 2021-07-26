@@ -1,0 +1,51 @@
+TC ID:     P01
+Title:     Can add new owner
+Priority:  High	
+Steps:    1. Navigate to http://localhost:9966/petclinic/ | Home page is loaded
+	   2. Click on Find Owners from main menu | Find owners page is loaded
+	   3. Click on Add Owner link | New Owner form is loaded
+	   4. Enter: First Name: Dani
+		       Last Name: Tsaribrodski
+		       Address: Pirotska street
+		       City: Sofia
+			   Telephone: 0898
+	   5. Click on Add Owner button		
+Expected Result: New owner should be added
+
+TC ID:     P02
+Title:     Can't add new owner with blank box
+Priority:  High	
+Steps:    1. Navigate to http://localhost:9966/petclinic/ | Home page is loaded
+	   2. Click on Find Owners from main menu | Find owners page is loaded
+	   3. Click on Add Owner link | New Owner form is loaded
+	   4. Enter: First Name: ""
+		       Last Name: ""
+		       Address: ""
+		       City: ""
+			   Telephone: ""
+	   5. Click on Add Owner button		
+Expected Result: Can't add new owner 
+
+TC ID:     P03
+Title:     Can search owner
+Priority:  medium	
+Steps:   1. Navigate to http://localhost:9966/petclinic/ | Home page is loaded 
+	  2. Click on Find Owners from main menu | Find owners page is loaded
+	  3. Input in Search box last name "Tsaribrodski" and click on Find Owner Button | 
+Expected Result: Should displayed: corporate logo, main menu, Owner information
+
+
+BUG report
+Title: I can register owner many times with same owner information (first and last name, address and phone) 
+Severity: Major
+Steps to reproduce: 
+1. Navigate to http://localhost:9966/petclinic/
+2. Add two or three new owners with same owner information
+
+
+Why is it a bug? 
+I think there should not be more than one person with same owner information
+
+Environment: personal PC
+OS: Linux Mint 18.3
+Browser v. 61.0.1 (64-bit)
